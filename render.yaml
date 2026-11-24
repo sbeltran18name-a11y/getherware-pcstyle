@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: getherware-pcstyle
+    runtime: docker
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: cloud
+      - key: PORT
+        value: 8085
